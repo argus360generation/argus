@@ -680,8 +680,10 @@
           <p>We demonstrate Argus can accurately understand dynamics across the 360° scene from a narrow perspective
             input. Using a 360° camera, we captured footage of a car driving by and provided our model with 60°
             horizontal FoV region of static camera pose (left). By comparing the car's ground truth trajectory (middle)
-            with our model's predicted trajectory (right), we observe strong alignment between the two paths. This
-            alignment validates our model's capacity to comprehend scene dynamics beyond the limited input view. </p>
+            with our model's predicted trajectory (right), we observe strong alignment between the two paths.
+            This alignment demonstrates Argus's ability to accurately predict object dynamics beyond the visible field of
+            view.
+          </p>
         </div>
         <div style="width: 95%; margin: auto;">
           <br>
@@ -757,11 +759,10 @@
       <div class="container">
         <h2 class="title is-3">Application: Video Stabilization</h2>
         <div style="width: 95%; margin: auto;">
-          Argus demonstrates promising potential for video stabilization as a natural by-product of its design,
-          requiring no additional modifications. Traditional video stabilization techniques rely on cropping, which
-          results in a changing field of view and loss of visual information. In contrast, Argus achieves
-          stabilization while maintaining the original, consistent field of view, as its generated panoramas inherently
-          preserve scene information across frames.
+          Argus shows promising application in video stabilization without modifications.
+          Traditional video stabilization techniques require cropping, leading to a reduced field of view and visual
+          information loss. In contrast, Argus enables video stabilization with a consistent field of view, as the
+          generated panorama preserves scene information across frames.
         </div>
         <div style="width: 95%; margin: auto;">
           <div id="results-carousel" class="carousel results-carousel">
@@ -889,10 +890,9 @@
       <div class="container">
         <h2 class="title is-3">Application: Camera View Direction Control</h2>
         <div style="width: 95%; margin: auto;">
-          Argus enables camera view direction control in dynamic environments by allowing free camera rotation within
-          the 360° panorama
-          through unwrapping to perspective views, which normal videos cannot offer due to limited perspectives. This
-          feature allows users to explore areas outside the initial viewpoint, enhancing immersion in the scene.
+          Argus enables camera viewpoint control in dynamic environments by unwrapping the generated 360° scene into
+          perspective views. This capability allows exploration beyond the initial field of view, enhancing
+          immersion in the scene.
         </div>
         <div style="width: 95%; margin: auto;">
           <div id="results-carousel" class="carousel results-carousel">
