@@ -675,7 +675,7 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">Analysis: Predicting Dynamics</h2>
+        <h2 class="title is-3">Analysis: Interpreting Scene Dynamics</h2>
         <div style="width: 95%; margin: auto;">
           <p>We demonstrate Argus can accurately understand dynamics across the 360° scene from a narrow perspective
             input. Using a 360° camera, we captured footage of a car driving by and provided our model with 60°
@@ -699,7 +699,7 @@
                 <source src="static/videos/dynamic-estimation/gt_detect.mp4" type="video/mp4">
               </video>
               <h2 class="subtitle has-text-centered">
-                <p>Ground-truth detection</p>
+                <p>Ground truth trajectory</p>
               </h2>
             </div>
             <div class="column is-one-third">
@@ -707,7 +707,7 @@
                 <source src="static/videos/dynamic-estimation/ours_detect.mp4" type="video/mp4">
               </video>
               <h2 class="subtitle has-text-centered">
-                <p>Predicted dynamics (ours)</p>
+                <p>Predicted trajectory (ours)</p>
               </h2>
             </div>
           </div>
@@ -725,6 +725,7 @@
             Park." As shown, Argus generalizes to generated videos.
           </p>
         </div>
+        <br>
         <div style="width: 95%; margin: auto;">
           <div style="width: 80%; margin: auto;">
             <video poster="" id="tree" autoplay controls muted loop loading="lazy" preload="metadata">
@@ -1073,39 +1074,22 @@
           the input video's perspective reappears in another frame frames, it remains visible in our
           generated panorama, enabling continuous tracking.
         </div>
+        <br>
         <div style="width: 95%; margin: auto;">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-video1">
-              <video poster="" id="video1" autoplay controls muted loop loading="lazy" preload="metadata">
-                <source src="static/videos/tracking/1.mp4" type="video/mp4">
-              </video>
-              <h2 class="subtitle has-text-centered">
-                <div class="columns">
-                  <div class="column is-one-second">
-                    <p>Tracking on original video</p>
-                  </div>
-                  <div class="column is-one-second">
-                    <p>Continuous Tracking (Argus)</p>
-                  </div>
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop loading="lazy" preload="metadata">
+              <source src="static/videos/tracking/1.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              <div class="columns">
+                <div class="column is-one-second">
+                  <p>Tracking on original video</p>
                 </div>
-              </h2>
-            </div>
-            <div class="item item-video2">
-              <video poster="" id="video2" autoplay controls muted loop loading="lazy" preload="metadata">
-                <!-- Your video file here -->
-                <source src="static/videos/tracking/2.mp4" type="video/mp4">
-              </video>
-              <h2 class="subtitle has-text-centered">
-                <div class="columns">
-                  <div class="column is-one-second">
-                    <p>Tracking on original video</p>
-                  </div>
-                  <div class="column is-one-second">
-                    <p>Continuous Tracking (Argus)</p>
-                  </div>
+                <div class="column is-one-second">
+                  <p>Continuous Tracking (Argus)</p>
                 </div>
-              </h2>
-            </div>
+              </div>
+            </h2>
           </div>
         </div>
       </div>
